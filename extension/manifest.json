@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Human Pause — Think before you trust",
+  "version": "1.0.0",
+  "description": "A local reflection checkpoint for high-stakes AI responses. Research prototype; not a fact checker.",
+  "content_scripts": [{
+    "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*", "https://gemini.google.com/*"],
+    "js": ["core.js", "content.js"],
+    "run_at": "document_idle"
+  }]
+}
